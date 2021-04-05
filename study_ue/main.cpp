@@ -24,17 +24,14 @@ int main() {
 	me.hp = 100.0f;
 	me.position.x = me.position.y = me.position.z = 0;
 
-	int x = 22;
+	ptrMe->hp = 80;
 
-	int *px = 0;
-	px = &x;
-
-	cout << px;
+	cout << ptrMe->hp;
 
 	return 0;
 }
 */
-
+/*
 int main() {
 	cout << "Enter your name: ";
 	string name;
@@ -44,4 +41,13 @@ int main() {
 	cin >> age;
 	string s = "Hello";
 	printf("%s, %s. Your age is: %d\n", s.c_str(), name.c_str(), age);
+}
+*/
+
+int main() {
+	int x = 10, y = 10;
+
+	cout << (x == y);
+
+	return 0;
 }
