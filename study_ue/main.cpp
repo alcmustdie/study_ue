@@ -45,9 +45,10 @@ int main() {
 */
 
 int main() {
-	int x = 10, y = 10;
+	bool isHungry = true;
 
-	cout << (x == y);
-
-	return 0;
+	if (isHungry) {
+		cout << "Eat..." << endl;
+	}
+	cout << "Sit.";
 }
