@@ -45,10 +45,20 @@ int main() {
 */
 
 int main() {
-	bool isHungry = true;
+	enum Item {
+		Coin, Key, Sanddollar
+	};
+	Item itemInHand = Coin;
 
-	if (isHungry) {
-		cout << "Eat..." << endl;
+	if (itemInHand == Key) {
+		cout << "Lion key" << endl;
 	}
-	cout << "Sit.";
+	else if (itemInHand == Coin) {
+		cout << "Rusty coin" << endl;
+	}
+	else if (itemInHand == Sanddollar) {
+		cout << "Sea sanddollar";
+	}
+
+	return 0;
 }
