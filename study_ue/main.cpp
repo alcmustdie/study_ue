@@ -42,7 +42,6 @@ int main() {
 	string s = "Hello";
 	printf("%s, %s. Your age is: %d\n", s.c_str(), name.c_str(), age);
 }
-*/
 
 int main() {
 	enum Item {
@@ -58,6 +57,125 @@ int main() {
 	}
 	else if (itemInHand == Sanddollar) {
 		cout << "Sea sanddollar";
+	}
+
+	return 0;
+}
+int main() {
+	int x, y;
+
+	cout << "Enter X, Y" << endl;
+	cin >> x >> y;
+
+	if (x == y) {
+		cout << "X = Y" << endl;
+	}
+	else {
+		cout << "X != Y" << endl;
+	}
+
+	if (x > y) {
+		cout << "X > Y" << endl;
+	}
+	else if (x < y) {
+		cout << "X < Y" << endl;
+	}
+	else {
+		cout << "X equals Y";
+	}
+
+	return 0;
+}
+
+enum Food {
+	Fish,
+	Bread,
+	Apple,
+	Orange
+};
+int main() {
+	Food food = Fish;
+
+	switch (food) {
+	case Fish:
+		cout << "Thats Fish!!!" << endl;
+		break;
+	case Bread:
+		cout << "Wow, what a nice Bread!!!" << endl;
+		break;
+	case Apple:
+		cout << "Red apple." << endl;
+		break;
+	case Orange:
+		cout << "Orange orange." << endl;
+		break;
+	default:
+		cout << "Bad food." << endl;
+		break;
+	}
+
+	cout << Fish;
+
+	return 0;
+}
+enum Vegetables { Potato = 1 << 0, Cabbage = 1 << 1, Broccoli = 1 << 2, Zucchini = 1 << 3 };
+
+int main() {
+	Vegetables veg = Potato;
+
+	switch (veg) {
+	case Zucchini:
+	case Broccoli:
+		cout << "Green!" << endl;
+		break;
+	default:
+		cout << "No green!" << endl;
+		break;
+	}
+	cout << (Potato | Cabbage |Broccoli);
+}
+*/
+
+enum Mount {
+	Horse = 1,
+	Mare,
+	Mule,
+	Sheep,
+	Chocobo
+};
+
+int main() {
+	int mount;
+
+	cout << "Choose your mount: \n";
+	cout << Horse << " Horse" << endl;
+	cout << Mare << " Mare" << endl;
+	cout << Mule << " Mule" << endl;
+	cout << Sheep << " Sheep" << endl;
+	cout << Chocobo << " Chocobo" << endl;
+
+	cin >> mount;
+
+	switch (mount)
+	{
+	case Horse:
+		cout << "Your mount is Horse";
+		break;
+	case Mare:
+		cout << "Your mount is Mare";
+		break;
+	case Mule:
+		cout << "Your mount is Mule";
+		break;
+	case Sheep:
+		cout << "Your mount is Sheep";
+		break;
+	case Chocobo:
+		cout << "Your mount is Chocobo";
+		break;
+	default:
+		cout << "Cann't be mounted";
+		break;
 	}
 
 	return 0;
