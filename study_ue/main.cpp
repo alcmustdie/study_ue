@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 
 using namespace std;
@@ -134,8 +134,6 @@ int main() {
 	}
 	cout << (Potato | Cabbage |Broccoli);
 }
-*/
-
 enum Mount {
 	Horse = 1,
 	Mare,
@@ -145,6 +143,7 @@ enum Mount {
 };
 
 int main() {
+	setlocale(LC_ALL, "Russian");
 	int mount;
 
 	cout << "Choose your mount: \n";
@@ -179,4 +178,43 @@ int main() {
 	}
 
 	return 0;
+}
+int main() {
+	int x = 1;
+
+	while (x <= 16)
+	{
+		cout << x << "\t";
+		cout << x * x << endl;
+
+		x+=1;
+	}
+
+	return 0;
+}
+int main() {
+	int sum = 0;
+
+	for (int x = 1; x <= 10; x++) {
+		sum += x;
+		cout << sum << '\n';
+	}
+
+	return 0;
+}
+*/
+
+void printRoad(int numSegments) {
+	for (int i = 0; i < numSegments; i++) {
+		cout << "*   *" << endl;
+		cout << "* | *" << endl;
+		cout << "* | *" << endl;
+		cout << "*   *" << endl;
+	}
+}
+
+int main() {
+	//double rootOf5 = sqrt(5);
+	//cout << rootOf5;
+	printRoad(5);
 }
