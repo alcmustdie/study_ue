@@ -202,8 +202,6 @@ int main() {
 
 	return 0;
 }
-*/
-
 void printRoad(int numSegments) {
 	for (int i = 0; i < numSegments; i++) {
 		cout << "*   *" << endl;
@@ -217,4 +215,84 @@ int main() {
 	//double rootOf5 = sqrt(5);
 	//cout << rootOf5;
 	printRoad(5);
+}
+bool isPositive(double value) {
+	return (value > 0);
+}
+
+bool absEqual(int a, int b) {
+	if (a == b) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+int main() {
+	cout << isPositive(-7);
+	//cout << absEqual(1, 1);
+}
+string g_string;
+
+void addA() {
+	g_string += 'A';
+}
+void addB() {
+	g_string += 'B';
+}
+void addC() {
+	g_string += 'C';
+}
+
+int main() {
+	addA();
+	addB();
+
+	cout << g_string << endl;
+
+	addC();
+
+	cout << g_string << endl;
+
+}
+void testFunc() {
+	static int runCount = 0;
+
+	cout << ++runCount << endl;
+}
+
+int main() {
+	testFunc();
+	testFunc();
+}
+*/
+
+
+int main() {
+	struct Armor
+	{
+		string name = "none";
+		int armorClass = 0;
+		double durability = 0;
+	};
+	struct Player {
+		string name = "DefaultName";
+		int hp = 100;
+		Armor armor;
+
+		void damage(int amount) {
+			hp -= abs(amount);
+		}
+		void recover(int amount) {
+			hp += amount;
+		}
+	};
+
+	Player me;
+	me.damage(2);
+	cout << me.name << endl;
+	cout << me.hp << endl;
+
+	return 0;
 }
