@@ -273,14 +273,14 @@ int main()
 	//test GitHub
 	struct Armor
 	{
-		string name = "none";
-		int armorClass = 0;
-		double durability = 0;
+		string name;
+		int armorClass;
+		double durability;
 	};
 	struct Player
 	{
-		string name = "DefaultName";
-		int hp = 100;
+		string name;
+		int hp;
 		Armor armor;
 
 		void damage(int amount)
