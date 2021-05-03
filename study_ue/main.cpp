@@ -271,7 +271,7 @@ int main() {
 int main()
 {
 	//test GitHub
-	   //test Restored
+	//test Restored
 	struct Armor
 	{
 		string name;
