@@ -268,8 +268,8 @@ int main() {
 }
 */
 
-
-int main() {
+int main()
+{
 	//test GitHub
 	struct Armor
 	{
@@ -277,15 +277,18 @@ int main() {
 		int armorClass = 0;
 		double durability = 0;
 	};
-	struct Player {
+	struct Player
+	{
 		string name = "DefaultName";
 		int hp = 100;
 		Armor armor;
 
-		void damage(int amount) {
+		void damage(int amount)
+		{
 			hp -= abs(amount);
 		}
-		void recover(int amount) {
+		void recover(int amount)
+		{
 			hp += amount;
 		}
 	};
