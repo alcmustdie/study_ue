@@ -270,6 +270,7 @@ int main() {
 
 
 int main() {
+	//test GitHub
 	struct Armor
 	{
 		string name = "none";
