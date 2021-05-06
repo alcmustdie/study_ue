@@ -274,14 +274,14 @@ int main()
 	//test Restored
 	struct Armor
 	{
-		string name;
-		int armorClass;
-		double durability;
+		string name = "Default";
+		int armorClass = 1;
+		double durability = 0;
 	};
 	struct Player
 	{
-		string name;
-		int hp;
+		string name = "Default";
+		int hp = 100;
 		Armor armor;
 
 		void damage(int amount)
@@ -296,6 +296,7 @@ int main()
 
 	Player me;
 	me.damage(2);
+	me.recover(12);
 	cout << me.name << endl;
 	cout << me.hp << endl;
 
