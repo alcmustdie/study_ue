@@ -272,6 +272,7 @@ int main()
 {
 	//test GitHub
 	//test Restored
+	//test reinstalled
 	struct Armor
 	{
 		string name = "Default";
